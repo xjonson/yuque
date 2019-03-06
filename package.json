@@ -1,0 +1,14 @@
+{
+  "name": "yuque-vuepress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.42",
+    "vuepress-plugin-yuque": "^0.3.1"
+  }
+}
