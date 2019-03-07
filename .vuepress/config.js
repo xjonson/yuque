@@ -1,17 +1,23 @@
 module.exports = {
   title: 'JonsonXu Blog',
-  description: ' ',
+  description: '由VuePress、语雀、GitHub、Netflix共同驱动',
+  head: [
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./public/favicon.ico` }]
+  ],
   themeConfig: {
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    //   { text: 'Guide', link: '/guide/' },
-    //   { text: 'External', link: 'https://google.com' },
-    // ],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'About', link: '/about/' },
+      { text: 'Github', link: 'https://github.com/xjonson/yuque' },
+    ],
     // sidebar: [
     //   '/',
     //   '/page-a',
     //   ['/page-b', 'Explicit link text']
     // ]
+  },
+  markdown: {
+    lineNumbers: true,
   },
   plugins: [
     ['vuepress-plugin-yuque', {
@@ -20,11 +26,11 @@ module.exports = {
       home: {
         actionText: 'Getting Started →',
         actionLink: '/intro/',
-        // heroImage: 'https://github.com/xjonson/images/blob/master/x-logo.jpg',
+        heroImage: 'https://ws1.sinaimg.cn/large/006djfE8ly1g0ty3jlp9wj30ig0igq3o.jpg',
         features: [
-          // { title: '循序渐进', details: '本教程的难度依次递进，为阅读者呈现舒适的学习曲线' },
-          // { title: '值得信赖', details: '由 antd 团队亲自打造，从技术栈、生态、研发流程等来为你提供系统化的学习体验' },
-          // { title: '最佳实践', details: '通过结合实际开发过程中的案例，来描述不同场景下的最佳实践' },
+          { title: 'VuePress', details: 'VuePress 提供了站点框架。及 Markdown 引擎解析文章。' },
+          { title: '语雀', details: '「语雀」为站点提供markdown格式文本编写部署工具' },
+          { title: 'GitHub&Netflix', details: 'GitHub 提供了项目源码托管。Netflix 配合语雀 Web Hooks 及 Github 提供了文章发布后自动部署到站点的功能。' },
         ],
         footer: `Copyright © JonsonXu`,
       }
