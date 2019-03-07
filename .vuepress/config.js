@@ -1,6 +1,6 @@
 module.exports = {
   title: 'JonsonXu Blog',
-  description: '由VuePress、语雀、GitHub、Netflix共同驱动',
+  description: '由VuePress、语雀、GitHub、Netlify共同驱动',
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./public/favicon.ico` }]
   ],
@@ -30,7 +30,7 @@ module.exports = {
         features: [
           { title: 'VuePress', details: 'VuePress 提供了站点框架。及 Markdown 引擎解析文章。' },
           { title: '语雀', details: '「语雀」为站点提供markdown格式文本编写部署工具' },
-          { title: 'GitHub&Netflix', details: 'GitHub 提供了项目源码托管。Netflix 配合语雀 Web Hooks 及 Github 提供了文章发布后自动部署到站点的功能。' },
+          { title: 'GitHub&Netlify', details: 'GitHub 提供了项目源码托管。Netlify 配合语雀 Web Hooks 及 Github 提供了文章发布后自动部署到站点的功能。' },
         ],
         footer: `Copyright © JonsonXu`,
       }
