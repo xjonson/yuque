@@ -2,7 +2,7 @@ module.exports = {
   title: 'JonsonXu Blog',
   description: '由VuePress、语雀、GitHub、Netlify共同驱动',
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./public/favicon.ico` }]
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `https://jonsonxu.top/favicon.ico` }]
   ],
   themeConfig: {
     nav: [
