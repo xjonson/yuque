@@ -2,7 +2,14 @@ module.exports = {
   title: 'JonsonXu Blog',
   description: '由VuePress、语雀、GitHub、Netlify共同驱动',
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `https://ws1.sinaimg.cn/large/006djfE8ly1g0ty3jlp9wj30ig0igq3o.jpg` }]
+    [
+      'link',
+      {
+        rel: 'shortcut icon',
+        type: "image/x-icon",
+        href: `https://ws1.sinaimg.cn/large/006djfE8ly1g0ty3jlp9wj30ig0igq3o.jpg`
+      }
+    ]
   ],
   themeConfig: {
     nav: [
@@ -10,21 +17,16 @@ module.exports = {
       { text: 'About', link: '/about/' },
       { text: 'Github', link: 'https://github.com/xjonson/yuque' },
     ],
-    // sidebar: [
-    //   '/',
-    //   '/page-a',
-    //   ['/page-b', 'Explicit link text']
-    // ]
   },
   markdown: {
-    lineNumbers: true,
+    // lineNumbers: true,
   },
   plugins: [
     ['vuepress-plugin-yuque', {
       repoUrl: 'https://www.yuque.com/jonson/blog',
       html: 'true',
       home: {
-        actionText: 'Getting Started →',
+        actionText: '查看博文 →',
         actionLink: '/intro/',
         heroImage: 'https://ws1.sinaimg.cn/large/006djfE8ly1g0ty3jlp9wj30ig0igq3o.jpg',
         features: [
